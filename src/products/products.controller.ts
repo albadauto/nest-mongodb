@@ -31,4 +31,9 @@ export class ProductsController {
   remove(@Param('id') id: string) {
     return this.productsService.remove(id);
   }
+
+  @Get("mail/sendMail") //Criar rota isolada do CRUD da api
+  sendMain(){
+    return 'email enviado!'
+  }
 }

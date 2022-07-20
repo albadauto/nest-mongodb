@@ -12,7 +12,7 @@ export class ProductsService {
 
   create(createProductDto: CreateProductDto) {
     const user = new this.productModel(createProductDto)
-    return this.productModel.create(createProductDto)
+    return this.productModel.create(user)
   }
 
   findAll() {
